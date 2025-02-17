@@ -38,17 +38,18 @@ public class Main {
 
         }
 
-        for (int k = 0; k < Enumbers.size(); k++) {
+       for (int k = 0; k < Enumbers.size(); k++) {
             Esum += Enumbers.get(k);
+            Ecount++;
             System.out.println("The even numbers :" + Enumbers.get(k));
         }
 
         for (int f = 0; f < Onumbers.size(); f++) {
             Osum += Onumbers.get(f);
+            Ocount++;
             System.out.println("The even numbers :" + Onumbers.get(f));
 
         }
-
 
         System.out.println("The even numbers  count " +Ecount + " sum :  " + Esum);
         System.out.println("The odd numbers  count " + Ocount + " sum :  " + Osum);
