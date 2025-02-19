@@ -30,15 +30,15 @@ public class Main {
 
 
         for (int j = 0; j < numbers.size(); j++) {
-            if (numbers.get(j) % 2 == 0) {
+            if (numbers.get(j) % 2 == 0 && numbers.get(j)!=0) {
                 Enumbers.add(numbers.get(j));
-            } else if (numbers.get(j) % 2 != 0) {
+            } else if (numbers.get(j) % 2 != 0 && numbers.get(j)!=0) {
                 Onumbers.add(numbers.get(j));
             }
 
         }
 
-       for (int k = 0; k < Enumbers.size(); k++) {
+        for (int k = 0; k < Enumbers.size(); k++) {
             Esum += Enumbers.get(k);
             Ecount++;
             System.out.println("The even numbers :" + Enumbers.get(k));
@@ -47,9 +47,10 @@ public class Main {
         for (int f = 0; f < Onumbers.size(); f++) {
             Osum += Onumbers.get(f);
             Ocount++;
-            System.out.println("The even numbers :" + Onumbers.get(f));
+            System.out.println("The odd numbers :" + Onumbers.get(f));
 
         }
+
 
         System.out.println("The even numbers  count " +Ecount + " sum :  " + Esum);
         System.out.println("The odd numbers  count " + Ocount + " sum :  " + Osum);
